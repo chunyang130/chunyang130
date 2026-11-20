@@ -23,12 +23,12 @@
 
 | 專案 | 內容 | 成果 |
 | --- | --- | --- |
-| [monthly-revenue-classifier](https://github.com/chunyang130/monthly-revenue-classifier) | Python 自動分類每月業績報表，三表金額自動勾稽 | 每月作業 8 小時 → 20 分鐘，回測準確率約 99%；3 位主管使用中 |
+| [course-qa-rag](https://github.com/chunyang130/course-qa-rag) | 課程問答 RAG：BM25 檢索、強制引用、程式驗證；HTTP API 與問答網頁。Docker 容器化、Kubernetes（kind）驗證自我修復與零停機更新；知識庫更新管線含評估閘門，通過才自動部署到 Google Cloud Run | 檢索與答對率 13/14 → 14/14，資料沒有的問題 3/3 正確拒答；[**線上示範**](https://course-qa-rag-799013895800.asia-east1.run.app) |
 | [study-abroad-school-selection-agent](https://github.com/chunyang130/study-abroad-school-selection-agent) | 留學選校 Claude Agent Skill，只採官網等首要來源防止幻覺 | 選校表 2 小時 → 10 分鐘；試作僅 1 筆錯誤，靠每欄附的官網連結當場發現；6 位顧問使用中 |
 | [consultation-notes-structurer](https://github.com/chunyang130/consultation-notes-structurer) | Claude API＋Tool Use 把口語諮詢摘要轉成固定欄位，存入 SQLite 產生追蹤報表 | 三輪真實測試：狀態判斷 7/8 → 8/8，跟進日期 3/4 → 4/4 |
-| [course-qa-rag](https://github.com/chunyang130/course-qa-rag) | 課程問答 RAG：BM25 檢索、強制引用、程式驗證；HTTP API 與問答網頁。Docker 容器化、Kubernetes（kind）驗證自我修復與零停機更新；知識庫更新管線含評估閘門，通過才自動部署到 Google Cloud Run | 檢索與答對率 13/14 → 14/14，資料沒有的問題 3/3 正確拒答；[**線上示範**](https://course-qa-rag-799013895800.asia-east1.run.app) |
-| [course-kb-mcp](https://github.com/chunyang130/course-kb-mcp) | 不用 SDK、自行實作 MCP 協定，讓 Claude Desktop 查詢課程文件 | 18 項協定測試，已實際接上 Claude Desktop 運作 |
 | [model-benchmark](https://github.com/chunyang130/model-benchmark) | 同一份考卷比較 Claude、Gemini 與地端開源模型的品質、速度、成本 | 此任務 Haiku 全對、每千題 0.21 美元；貴 20 倍的 Sonnet 沒有更好 |
+| [course-kb-mcp](https://github.com/chunyang130/course-kb-mcp) | 不用 SDK、自行實作 MCP 協定，讓 Claude Desktop 查詢課程文件 | 18 項協定測試，已實際接上 Claude Desktop 運作 |
+| [monthly-revenue-classifier](https://github.com/chunyang130/monthly-revenue-classifier) | Python 自動分類每月業績報表，三表金額自動勾稽 | 每月作業 8 小時 → 20 分鐘，回測準確率約 99%；3 位主管使用中 |
 
 所有專案都使用虛構或去識別化的資料，並以 GitHub Actions 自動測試。程式由我與 Claude Code 協作完成；需求、業務規則、驗證方式與取捨由我決定。
 
